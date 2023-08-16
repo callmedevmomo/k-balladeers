@@ -37,7 +37,7 @@ const BackgroundMusic = () => {
 	return (
 		<div className={styles.backgroundPlayerWrapper}>
 			<audio ref={audioRef} autoPlay loop>
-				<source src="/bg/kBallad03.wav" type="audio/wav" />
+				<source src="/bg/gradation.wav" type="audio/wav" />
 				Your browser does not support the audio element.
 			</audio>
 			<div className={styles.titleWrapper}>
@@ -45,7 +45,7 @@ const BackgroundMusic = () => {
 					{isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
 				</button>
 				<Marquee className={styles.titleContext} speed={30}>
-					영재 - 블라블라
+					{'영재 - 그라데이션(10cm)'}
 				</Marquee>
 			</div>
 			<div className={styles.volumeWrapper}>
