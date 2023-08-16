@@ -1,0 +1,31 @@
+@keyframes handleOpactiy {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.homeTopWrapper {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	border: 1px solid blue;
+	padding: 10px;
+	height: 2000px;
+	position: relative;
+}
+.homeTopLeftCards {
+	width: 40%;
+	height: 800px;
+	background: linear-gradient(-225deg, transparent 15px, #92a69a 0);
+	animation: handleOpactiy 1s ease-in-out;
+	position: sticky;
+	top: 0px;
+}
+.homeTopRightCards {
+	width: 59%;
+	height: 800px;
+	border: 1px solid red;
+}

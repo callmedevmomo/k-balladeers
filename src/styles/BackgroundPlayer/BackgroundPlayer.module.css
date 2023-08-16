@@ -1,0 +1,136 @@
+.backgroundPlayerWrapper {
+	position: fixed;
+	z-index: 999;
+	bottom: 10px;
+	right: 10px;
+	padding: 10px 30px;
+	width: 300px;
+	height: 90px;
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.backgroundPlayerWrapper {
+	transition: height 0.3s; /* 애니메이션 효과를 위한 트랜지션 설정 */
+	height: 50px;
+	overflow: hidden;
+}
+
+.backgroundPlayerWrapper:hover {
+	height: 90px;
+	overflow: auto;
+}
+
+.titleWrapper {
+	display: flex;
+	align-items: center;
+}
+.titleContext {
+	width: 80% !important;
+	margin-left: 10px;
+	font-size: 18px;
+}
+.volumeWrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+.volumeUpIcon {
+	margin-left: 10px;
+}
+.volumeDownIcon {
+	margin-right: 10px;
+}
+.volumeBar {
+	background-color: red;
+}
+.volumeBar {
+	-webkit-appearance: none;
+	width: 100%;
+}
+.volumeBar:focus {
+	outline: none;
+}
+.volumeBar::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #2497e3;
+	border-radius: 1px;
+	border: 0px solid #000000;
+}
+.volumeBar::-webkit-slider-thumb {
+	box-shadow: 0px 0px 0px #000000;
+	border: 1px solid #2497e3;
+	height: 18px;
+	width: 18px;
+	border-radius: 25px;
+	background: #a1d0ff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -7px;
+}
+.volumeBar:focus::-webkit-slider-runnable-track {
+	background: #2497e3;
+}
+.volumeBar::-moz-range-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 0px 0px 0px #000000;
+	background: #2497e3;
+	border-radius: 1px;
+	border: 0px solid #000000;
+}
+.volumeBar::-moz-range-thumb {
+	box-shadow: 0px 0px 0px #000000;
+	border: 1px solid #2497e3;
+	height: 18px;
+	width: 18px;
+	border-radius: 25px;
+	background: #a1d0ff;
+	cursor: pointer;
+}
+.volumeBar::-ms-track {
+	width: 100%;
+	height: 5px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+.volumeBar::-ms-fill-lower {
+	background: #2497e3;
+	border: 0px solid #000000;
+	border-radius: 2px;
+	box-shadow: 0px 0px 0px #000000;
+}
+.volumeBar::-ms-fill-upper {
+	background: #2497e3;
+	border: 0px solid #000000;
+	border-radius: 2px;
+	box-shadow: 0px 0px 0px #000000;
+}
+.volumeBar::-ms-thumb {
+	margin-top: 1px;
+	box-shadow: 0px 0px 0px #000000;
+	border: 1px solid #2497e3;
+	height: 18px;
+	width: 18px;
+	border-radius: 25px;
+	background: #a1d0ff;
+	cursor: pointer;
+}
+.volumeBar:focus::-ms-fill-lower {
+	background: #2497e3;
+}
+.volumeBar:focus::-ms-fill-upper {
+	background: #2497e3;
+}

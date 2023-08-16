@@ -1,25 +1,40 @@
 import { FontsMelody } from '@assets/fonts/fonts';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from '@components/Header/Header';
 
-import { useParallax } from 'react-scroll-parallax';
-import styles from './test.module.css';
+import BackgroundMusic from '@components/BackgroundPlayer/BackgroundPlayer';
+import HomeTopConatiner from '@components/Home/HomeTopContainer';
+import Loading from '@components/Loading/Loading';
+import styles from '@styles/Home/Home.module.css';
+import { Parallax } from 'react-scroll-parallax';
 
 const Home: React.FC = ({}) => {
-	const parallax = useParallax<HTMLDivElement>({
-		rotate: [0, 360],
-	});
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 2000);
+	}, []);
 	return (
-		<main
-			className={`flex min-h-screen flex-col items-center justify-between p-24 ${FontsMelody.className}`}
-		>
-			<Header />
-			<div className={styles.container}>
-				<div ref={parallax.ref} className={styles.spinner}></div>
-			</div>
-		</main>
+		<>
+			{loading ? (
+				<Loading />
+			) : (
+				<main
+					className={`flex min-h-screen flex-col items-center justify-between p-24 ${FontsMelody.className}`}
+				>
+					<Header />
+					<BackgroundMusic />
+					<HomeTopConatiner />
+					<div className={styles.container}>
+						<Parallax speed={-10} className={styles.spinner}></Parallax>
+					</div>
+				</main>
+			)}
+		</>
 	);
 };
 

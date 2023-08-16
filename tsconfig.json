@@ -25,7 +25,8 @@
 		"utils/index.ts",
 		"components/pages/Inbox/index.js",
 		"pages/registertsx",
-		"pages/api/v1"
+		"pages/api/v1",
+		"global.d.ts"
 	],
 	"exclude": ["node_modules"]
 }
