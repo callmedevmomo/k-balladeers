@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 								<div className={styles.footerContext}>
 									누군가의 음악으로 살아가는 사람들의 모임,
 									<br />
-									당신의 목소리를 들려주세요.
+									당신의 목소리를 들려주세요..
 								</div>
 							</Fade>
 						</div>
