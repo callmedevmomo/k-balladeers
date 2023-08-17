@@ -5,10 +5,11 @@
 
 // import React. {uesEffect,useState} from 'react';
 
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import React from "react";
+import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 
-const About: React.FC = ({}) => {
+import React from 'react';
+
+const About: React.FC = () => {
 	return (
 		<div>
 			<AccessibilityNewIcon />

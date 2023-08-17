@@ -1,9 +1,12 @@
-import { FontsMelody, NotoSansKR } from '@assets/fonts/fonts';
-import HomeRightLottie from '@components/Home/HomeRightLottie';
-import styles from '@styles/Home/HomeTopContainer.module.css';
-import React from 'react';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
+
+import React from 'react';
+
+import { FontsMelody, NotoSansKR } from '@assets/fonts/fonts';
+
+import HomeRightLottie from '@components/Home/HomeRightLottie';
+import styles from '@styles/Home/HomeTopContainer.module.css';
 
 const HomeTopWrapper = styled.div``;
 
@@ -15,7 +18,7 @@ const HomeTopLeftSticker = styled.a``;
 
 const HomeTopMiddleCards = styled.div``;
 
-const HomeTopConatiner: React.FC = ({}) => {
+const HomeTopConatiner: React.FC = () => {
 	return (
 		<HomeTopWrapper
 			className={`${styles.homeTopWrapper} ${NotoSansKR.className}`}

@@ -2,9 +2,11 @@ import PauseIcon from '@mui/icons-material/Pause';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import styles from '@styles/BackgroundPlayer/BackgroundPlayer.module.css';
+
 import { useRef, useState } from 'react';
 import Marquee from 'react-fast-marquee';
+
+import styles from '@styles/BackgroundPlayer/BackgroundPlayer.module.css';
 
 // 커스텀 volume 속성을 추가한 HTMLAudioElement 타입 선언
 interface CustomAudioElement extends HTMLAudioElement {
@@ -39,13 +41,14 @@ const BackgroundMusic = () => {
 			<audio ref={audioRef} autoPlay loop>
 				<source src="/bg/gradation.wav" type="audio/wav" />
 				Your browser does not support the audio element.
+				<track kind="captions" srcLang="ko" label="잘못된 접근입니다." />
 			</audio>
 			<div className={styles.titleWrapper}>
-				<button onClick={togglePlay}>
+				<button onClick={togglePlay} type="button">
 					{isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
 				</button>
 				<Marquee className={styles.titleContext} speed={30}>
-					{'영재 - 그라데이션(10cm)'}
+					영재 - 그라데이션(10cm)
 				</Marquee>
 			</div>
 			<div className={styles.volumeWrapper}>

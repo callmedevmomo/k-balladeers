@@ -5,7 +5,7 @@ import LoadingLottie from '@assets/lottie/enjoyMusic.json';
 
 import style from '@styles/Home/HomeRightLottie.module.css';
 
-const HomeRightLottie: React.FC = ({}) => {
+const HomeRightLottie: React.FC = () => {
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	return (
 		<div className={style.loadingComponent}>

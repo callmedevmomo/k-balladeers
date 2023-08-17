@@ -1,20 +1,20 @@
-import { FontsMelody } from '@assets/fonts/fonts';
+import Fade from 'react-reveal/Fade';
 
 import React, { useEffect, useState } from 'react';
+import Lottie from 'react-lottie-player';
+import { Parallax } from 'react-scroll-parallax';
 
+import { FontsMelody } from '@assets/fonts/fonts';
+import recordLottie from '@assets/lottie/liveRecord.json';
+
+import BackgroundMusic from '@components/BackgroundPlayer/BackgroundPlayer';
 import Footer from '@components/Footer/Footer';
 import Header from '@components/Header/Header';
-
-import recordLottie from '@assets/lottie/liveRecord.json';
-import BackgroundMusic from '@components/BackgroundPlayer/BackgroundPlayer';
 import HomeTopConatiner from '@components/Home/HomeTopContainer';
 import Loading from '@components/Loading/Loading';
 import styles from '@styles/Home/Home.module.css';
-import Lottie from 'react-lottie-player';
-import Fade from 'react-reveal/Fade';
-import { Parallax } from 'react-scroll-parallax';
 
-const Home: React.FC = ({}) => {
+const Home: React.FC = () => {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -23,7 +23,7 @@ const Home: React.FC = ({}) => {
 		}, 2000);
 	}, []);
 	return (
-		<>
+		<div>
 			{loading ? (
 				<Loading />
 			) : (
@@ -65,7 +65,7 @@ const Home: React.FC = ({}) => {
 					<Footer />
 				</main>
 			)}
-		</>
+		</div>
 	);
 };
 

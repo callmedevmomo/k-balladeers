@@ -56,7 +56,11 @@
 		"no-shadow": "off",
 		"jsx-a11y/aria-role": "off",
 		"default-param-last": 0,
-		"no-restricted-syntax": ["error", "WithStatement", "BinaryExpression[operator='in']"],
+		"no-restricted-syntax": [
+			"error",
+			"WithStatement",
+			"BinaryExpression[operator='in']"
+		],
 		"react/function-component-definition": [
 			"error",
 			{
@@ -75,7 +79,14 @@
 		"import/order": [
 			"error",
 			{
-				"groups": ["external", "builtin", "internal", ["sibling", "parent", "index"], "type", "unknown"],
+				"groups": [
+					"external",
+					"builtin",
+					"internal",
+					["sibling", "parent", "index"],
+					"type",
+					"unknown"
+				],
 				"pathGroups": [
 					{
 						"pattern": "{next*,next/**}",

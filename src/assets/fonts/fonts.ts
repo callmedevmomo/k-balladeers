@@ -1,5 +1,11 @@
-import { Hi_Melody, Noto_Sans_KR } from "next/font/google";
+import {
+	Hi_Melody as hiMelody,
+	Noto_Sans_KR as notoSansKR,
+} from 'next/font/google';
 
-export const FontsMelody = Hi_Melody({ subsets: ["latin"], weight: ["400"] });
+export const FontsMelody = hiMelody({ subsets: ['latin'], weight: ['400'] });
 
-export const NotoSansKR = Noto_Sans_KR({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
+export const NotoSansKR = notoSansKR({
+	subsets: ['latin'],
+	weight: ['300', '400', '500', '700'],
+});

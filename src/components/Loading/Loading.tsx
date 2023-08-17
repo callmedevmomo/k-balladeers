@@ -5,7 +5,7 @@ import LoadingLottie from '@assets/lottie/lldcmilc.json';
 
 import style from './Loading.module.css';
 
-const Loading: React.FC = ({}) => {
+const Loading: React.FC = () => {
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	return (
 		<div className={style.loadingComponent}>
